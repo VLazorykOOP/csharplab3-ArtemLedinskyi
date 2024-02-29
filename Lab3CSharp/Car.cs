@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Lab3CSharp
 {
-    internal class Car
+    internal class Car:TransportVehicle
     {
+        public int NumOfSeats { get; set; }
+
+        public override void Show()
+        {
+            base.Show();
+            Console.WriteLine($"Кількість мість: {NumOfSeats}");
+        }
     }
 }
