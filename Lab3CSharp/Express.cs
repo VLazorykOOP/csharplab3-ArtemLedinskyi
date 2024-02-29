@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Lab3CSharp
 {
-    internal class Express
+    internal class Express : TransportVehicle
     {
+        public string Destination { get; set; }
+
+        public override void Show()
+        {
+            base.Show();
+            Console.WriteLine($"Пункт призначення: {Destination}");
+        }
     }
 }
